@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>2do list</title>
+    <meta charset ="UTF-8">
+    <link rel="stylesheet" type="text/css" href="..\CSS\cssAV2.css">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:100,300&display=swap" rel="stylesheet">
+    <div class = "barraLateral">
+	<nav>
+    <a href ="../index.html"><img src = "../img/logo.svg" alt = "Logo">
+    </a>
+    <a href ="./2do.html" class ="button">TO-DO LIST</a>
+    <a href ="./playlist.html" class ="button">PLAYLIST</a>
+    <a href ="./radio.html" class ="button">RADIO</a>
+    <a href ="./curso.html" class ="button">CURSOS</a>
+	</nav>
+    </div>
+  </head>
+  <body>
+    <h1>Lista de Tarefas.</h1>
+    <p>Seja bem-vindo(a) a nossa To Do List, experimente criando uma lista
+    de tudo o que você precisa fazer hoje.</p>
+    <div class = "todoCabecalho">
+      <h2>Minha Lista de Tarefas.</h2>
+      <input type="text" id="adicionar" placeholder="Tarefa...">
+      <span onclick="newElement()" class="addBtn">ADICIONAR</span>
+    </div>
+	<ul id="minhaLista">
+	  <li>Exemplo 1</li>
+	  <li class = "checado">Exemplo 2</li>
+	  <li>Exemplo 3</li>
+	  <li>Exemplo 4</li>
+	</ul>
+	<script src = "../js/2do.js"></script>
+ </body>
+</html>
+

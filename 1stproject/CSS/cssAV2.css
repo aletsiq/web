@@ -1,0 +1,255 @@
+.barraLateral
+{
+  width: 180px;  /*tamanho da largura da barra lateral*/
+  height: 1024px;  /*altura da barra lateral*/
+  position: fixed;  /*fixando a barra lateral independente da rolagem*/
+  top: 0;  /*posicionando a barra lateral no canto superior esquerdo*/
+  left: 0;
+  z-index: 1;  /*posicionando a barra acima do site*/
+  overflow-x: hidden;  /*removendo opções de scroll*/
+  background-color: #011627; /*definindo a cor de fundo da barra lateral*/
+  box-shadow: 0px 7px 10px /*sombra no canto da barra*/
+	rgba(0,0,0,0.2);
+}
+
+.barraLateral img
+{
+  width: 165px; /*tamanho da largura da imagem*/ 
+  height: 165px;  /*tamanho da altura da imagem*/
+}
+
+.barraLateral a
+{
+  font-size: 20px;  /*tamanho da fonte em pixels*/
+  display: block; /*exibição em blocos*/
+  text-decoration: none;/*remoção da linha embaixo do link*/
+}
+
+
+body h1
+{
+  font-size: 24px;  /*definindo o tamanho da fonte*/
+  color: #F2F6FA;   /*definindo a cor do texto*/
+}
+
+.link1 
+{
+  position: relative; /*posicionamento relativo aos outros itens*/
+  bottom: 800px; /*distância em relação a parte de baixo da página*/
+}
+
+.link2
+{
+  position: relative; 
+  bottom: 790px;
+}
+
+.link3
+{
+  position: relative;
+  bottom: 780px;
+}
+
+
+body h2
+{
+  font-size: 20px; /*tamanho da fonte*/
+  color: #F2F6FA; /*cor da fonte*/
+}
+
+
+body p
+{
+  /*limitando o tamanho do texto*/
+  height: 837px;
+  width: 1070px; 
+  line-height: 23px;  /*espaçamento entre as linhas*/
+  font-size: 16px;  /*tamanho da fonte*/
+  font-weight:300;
+  color: #F2F6FA; /*cor da fonte*/
+}
+body
+{
+  position: absolute; /*posição absoluta quanto aos outros elementos da página*/
+  display: inline-block; /*tipo de exibição*/
+  padding-left: 190px; /*distância em relação a parte esquerda para não ficar atrás da barra lateral*/
+  padding-top: 2px; /*distância em relação ao topo da página*/
+  margin: 0;
+  min-width: 250px; /*o mínimo de tamanho que o body exercerá*/
+  background-color: #00111f; /*cor do background do body*/
+  font-family:"Saira Semi Condensed", sans-serif;
+  font-style:"normal";/*fonte presente na página*/
+  font-weight:100;
+}
+
+*
+{
+  border-sizing: border-box;
+}
+
+ul
+{
+  margin: 0; /*sem margem e sem padding*/
+  padding: 0;
+}
+
+ul li
+{
+  cursor: pointer; /*cursor como clique*/
+  position: relative; /*posicionamento em relação aos outros elementos como relativo*/
+  bottom: 713.9px;
+  right:5px;
+  width: 69.1%;
+  padding: 12px 9px 12px 39px;
+  list-style-type: none;
+  background: #4d5b67;
+  font-size: 18px;
+  transition: 0.2s; /*transição*/
+  /*lista inselecionável*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Cada elemento da lista com uma cor diferente(tons de azul) */
+ul li:nth-child(odd)
+{
+  background: #334452;
+}
+/*cor mais escura ao passar o mouse*/
+ul li:hover 
+{
+  background: #ddd;
+}
+/*quando clicado o elemento muda de cor e é riscado*/
+ul li.checado
+{
+  background: #292B3B;
+  color: #fff;
+  text-decoration: line-through;
+}
+/*adicionar um 'vzinho' quando clica*/
+ul li.checado::before
+{
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+/*estilizando o botão de deletar*/
+.close
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+/*cor mais escura ao passar o mouse em cima do botão*/
+.close:hover
+{
+  background-color: #f44336;
+  color: white;
+}
+.button
+{
+  background-color: #E71D36; /*cor de fundo do botão*/
+  color: #FDFFFC; /*cor do texto do botão*/
+  padding: 15px 32px; /*posicionamento do botão na barra lateral*/
+  text-align: center; /*alinhando o texto no centro do botão*/
+  display: inline-block; /*alinhamento dos botões*/
+  margin: 4px 9px; /*margem*/
+  font-weight: bold; /*negrito dentro do botão*/
+  border-radius: 3px; /*borda*/
+  box-shadow: 0px 2px 4px /*sombreamento no botão*/
+   rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.4s; /*Para Safari segundo w3school */
+  transition-duration: 0.4s;
+}
+/* Destaque ao deslizar o mouse em cima do botão*/
+.button:hover
+{
+  color: #FFF05A;
+}
+/*estilizando o cabeçalho da lista*/
+.todoCabecalho
+{
+  width: 777px;
+  height: 95px;
+  position: absolute;
+  left: 185px;
+  top: 110px;
+  background-color: #1a2d3c;
+  padding: 3px 5px;
+  color: white;
+  border-radius:3px;
+  text-align: center;
+  font-family:"Saira Semi Condensed", sans-serif;
+  font-weight:300;
+  box-shadow: 0px 2px 4px 
+	rgba(0, 0, 0, 0.2);
+}
+/*limpando o cabeçalho após adicionar a tarefa*/
+.todoCabecalho:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+.todoCabecalho h2
+{
+  font-size:24px;
+  color:#FDFFFC;
+}
+
+/*estilizando o local demarcado pra digitar a tarefa*/
+input
+{
+  position: relative;
+  bottom: 12px;
+  left: 8%;
+  padding: 10px;
+  margin: 0;
+  border: none;
+  border-radius: 3px;
+  width: 70%;
+  height: 10%;
+  float: left;
+  font-size: 16px;
+  box-shadow:0px 2px 4px 
+	rgba(0, 0, 0, 0.2);
+}
+/*estilizando o botão de adicionar*/
+.addBtn
+{
+  position: relative;
+  display:table;
+  left: 60px;
+  bottom: 12px;
+  padding: 5px;
+  margin:auto;
+  width: 10%;
+  height:10%;
+  background: #C4C4C4;
+  color: #000000;
+  float: left;
+  font-size: 12px;
+  text-align:center;
+  vertical-align:middle;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 3px;
+  box-shadow:0px 2px 4px 
+	rgba(0, 0, 0, 0.2);
+}
+/*contraste ao passar o mouse em cima do add*/
+.addBtn:hover
+{
+  background-color: #bbb;
+}
